@@ -1,13 +1,12 @@
 import os
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request
+    Blueprint, flash, redirect, render_template, request
 )
 from werkzeug.utils import secure_filename
 
 from app.auth import login_required
 from .static import const
-from speechtotext import converter as conv
-
+from .speechtotext import converter as conv
 
 bp = Blueprint('index', __name__)
 
