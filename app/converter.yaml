@@ -1,30 +1,25 @@
-apiVersion: apps/v1beta2
+# This file configures the hello-world app which serves public web traffic.
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: speech-to-text-app
-  labels:
-    name: speech-to-text-app
+  name: speecht-to-text-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: speech-to-text-app
+      app: hello
   template:
     metadata:
-      name: speech-to-text-app
       labels:
-        name: speech-to-text-app
+        app: hello
     spec:
       containers:
-        - name: speech-to-text-app
-          image: gcr.io/coding-api-challange/flask-app:v1
-          ports:
-            - containerPort: 8080
-          resources:
-            requests:
-              memory: 256Mi
-            limits:
-              memory: 512Mi
-          env:
-            - name: DEBUG_MODE
-              value: "1"
+      - name: speecht-to-text-app
+        # Replace $GCLOUD_PROJECT with your project ID
+        image: gcr.io/coding-api-challange/helloworld-gke:latest
+        # This app listens on port 8080 for web traffic by default.
+        ports:
+        - containerPort: 8080
+        env:
+          - name: PORT
+            value: "8080"
