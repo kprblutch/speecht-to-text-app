@@ -1,9 +1,8 @@
-import os
-
 from flask import Flask
 from . import db
 from . import auth
 from . import index
+import os
 
 
 def create_app(test_config=None):
