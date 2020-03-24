@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Tim\PycharmProjects\flasktutorial\virtualenv"
+$env:VIRTUAL_ENV="C:\Users\Tim\PycharmProjects\speecht-to-text-app\virtualenv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
