@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d8c89b-1018-4002-8cd1-e606b7366d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/converter/converter.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speechtotext/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/MANIFEST.IN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/audiofiles/DUB_Whitehall_F_20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/audiofiles/speechtest_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/audiofiles/speechtest_2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/converter.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/static/const.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/auth/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/auth/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/index/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/index/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter/templates/index/update.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

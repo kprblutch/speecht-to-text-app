@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='converter',
+    name='app',
     version='1.0.0',
     description='a simple speecht to text converter',
     author='Tim Gaspard',

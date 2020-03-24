@@ -1,17 +1,17 @@
 import os
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template, request
 )
 from werkzeug.utils import secure_filename
 
-from converter.auth import login_required
+from app.auth import login_required
 from .static import const
 from speechtotext import converter as conv
 
 
 bp = Blueprint('index', __name__)
 
-# Check if the audi file has the right extension
+# Check if the audio file has the right extension
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in const.ALLOWED_EXTENSIONS
 
