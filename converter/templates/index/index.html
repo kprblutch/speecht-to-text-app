@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Converter{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <p><h2>Please provide the link to the audio file and the language it is in</h2>
+  <h3>In case you do not provide a wav file you will need to give the sample rate and encoding type as well</h3>
+  </p>
+  <form class= convert method="post" enctype=multipart/form-data>
+    <label for="file">Filename</label>
+    <input type=file name=file id="file">
+    <label for="language">Language</label>
+    <select class="language" id="language" type="text" name="lanuagedropdown" placeholder="Language">
+        <option id="english" value="en-US">English</option>
+        <option id="german" value="de-DE">German</option>
+        <option id="spanish" value="es-US">Spanish</option>
+        <option id="dutch" value="nl-NL">Dutch</option>
+    </select>
+    <label for="samplerate">Sample rate</label>
+    <input name="samplerate" id="samplerate">
+    <label for="encoding">Encoding</label>
+    <input name="encoding" id="encoding">
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}

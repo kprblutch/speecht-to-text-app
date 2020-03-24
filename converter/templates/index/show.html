@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Converted Audio{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <header method="POST">
+        <h1>I converted {{ filename }}</h1>
+    </header>
+    <h3>With the following parameters: Language = {{ language }} Samplerate = {{ samplerate }} encoding = {{ encoding }}</h3>
+    <p class="body" method="POST">
+    {% for line in text %}
+        <li>{{ line }}</li>
+    {%endfor%}
+    </p>
+{% endblock %}
