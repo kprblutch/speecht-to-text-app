@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d8c89b-1018-4002-8cd1-e606b7366d3d" name="Default Changelist" comment="" />
+    <list default="true" id="54d8c89b-1018-4002-8cd1-e606b7366d3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/converter/Docker/DockerFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/converter/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/converter/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZTpG9aixacy84OqE4DkhewjZfZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,6 +66,17 @@
       <updated>1584872839705</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584889466788">
