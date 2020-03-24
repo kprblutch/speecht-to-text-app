@@ -16,7 +16,7 @@ spec:
       containers:
       - name: speecht-to-text-app
         # Replace $GCLOUD_PROJECT with your project ID
-        image: gcr.io/coding-api-challange/helloworld-gke:latest
+        image: gcr.io/coding-api-challange/speecht-to-text-app:latest
         # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
