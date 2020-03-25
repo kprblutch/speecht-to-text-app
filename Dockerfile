@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 # For environments with multiple CPU cores, increase the number of workers
 # to be equal to the cores available.
 ENV PORT 8080
-CMD ["gunicorn", "app:app", "--config=app/config.py"]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app
