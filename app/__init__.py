@@ -36,8 +36,8 @@ def create_app(test_config=None):
     app.register_blueprint(index.bp)
     app.add_url_rule('/', endpoint='index')
 
-    if __name__ == "__main__":
-        app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+    #if __name__ == "__main__":
+    #    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
 
     return app
 
