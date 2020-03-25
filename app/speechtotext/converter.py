@@ -14,18 +14,21 @@ def convert_cloud_file(storage_uri, language_code="en-US", samplerate=44100, enc
 
     client = speech_v1p1beta1.SpeechClient()
 
-    # storage_uri = 'gs://cloud-samples-data/speech/brooklyn_bridge.mp3'
+    """
+    storage_uri = 'gs://cloud-samples-data/speech/brooklyn_bridge.mp3'
 
-    # The language of the supplied audio
-    # language_code = "en-US"
+    The language of the supplied audio
+    language_code = "en-US"
 
-    # Sample rate in Hertz of the audio data sent, as we only use wav file, this is not needed
-    # sample_rate_hertz = 44100
+    Sample rate in Hertz of the audio data sent, as we only use wav file, this is not needed
+    sample_rate_hertz = 44100
 
-    # Encoding of audio data sent. This sample sets this explicitly.
-    # This field is optional for FLAC and WAV audio formats.
-    #encoding = enums.RecognitionConfig.AudioEncoding.MP3
-    # Json format that is send to the Googple Speech to Text_API
+    Encoding of audio data sent. This sample sets this explicitly.
+    This field is optional for FLAC and WAV audio formats.
+    encoding = enums.RecognitionConfig.AudioEncoding.MP3
+    
+    """
+    # Json format that is send to the Googple Speech to Text_API encoding and sample rate are optional
     config = {
         "language_code": language_code,
 
@@ -54,22 +57,25 @@ def convert_local_file(local_file_path, language_code="en-US", samplerate=44100,
 
     client = speech_v1p1beta1.SpeechClient()
 
-    # storage_uri = 'local file'
+    """
+    storage_uri = 'local file'
 
-    # The language of the supplied audio
-    # language_code = "en-US"
+    The language of the supplied audio
+    language_code = "en-US"
 
-    # Sample rate in Hertz of the audio data sent, as we only use wav file, this is not needed
-    # sample_rate_hertz = 44100
+    Sample rate in Hertz of the audio data sent, as we only use wav file, this is not needed
+    sample_rate_hertz = 44100
 
-    # Encoding of audio data sent. This sample sets this explicitly.
-    # This field is optional for FLAC and WAV audio formats.
-    #encoding = enums.RecognitionConfig.AudioEncoding.MP3
+    Encoding of audio data sent. This sample sets this explicitly.
+    This field is optional for FLAC and WAV audio formats.
+    encoding = enums.RecognitionConfig.AudioEncoding.MP3
+    """
     # Json format that is send to the Googple Speech to Text_API
     config = {
         "language_code": language_code,
 
     }
+    #Loading localy stored file
     with io.open(local_file_path, "rb") as f:
         content = f.read()
     audio = {"content": content}
